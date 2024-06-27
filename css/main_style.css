@@ -7,6 +7,8 @@ body {
 
 #wrap {
     height: 100%;
+    width: 1920px;
+    margin: 0 auto; 
 }
 
 /* header 영역 */
@@ -18,6 +20,7 @@ body {
     position: fixed;
     border-bottom: 1px gold solid;
     z-index: 7;
+    left: 0; top: 0;
 }
 
 #header:hover{border-bottom: #e2e2e2 solid 1px ;}
@@ -159,7 +162,7 @@ body {
 
         /* section 영역 */
 
-#section{width: 1920px; padding-top: 140px;}
+#section{width: 1920px; padding-top: 140px; margin: 0 auto;}
 
 .slide_img{height: 540px;}
 
@@ -213,16 +216,82 @@ body {
 
 
 
+            /* footer 영역 */
+
+#footer{
+    width: 100%;
+    background-color: #292929;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.foot_inner{width: 1168px; margin: 0 auto;}
+
+    .f_menu{float: left;}
+
+    .f_menu li{}
+    .f_menu li a{
+        display: block;
+        padding: 5px 0;
+        font-weight: 600; color: #fff;}
+
+        .f_menu li a.yellow{color: gold;}
 
 
+.info{float: left; margin-left: 80px;}
+.info li{padding: 5px 0; color: #999; font-weight: 500;}
+
+.sns{float: right;}
+
+.sns li{
+    display: inline-block;
+}
+
+.sns li a{
+    display: block;
+    width: 40px; height: 40px;
+    background-image: url(../img/sns.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-indent: -9999px;
+    margin-left: 15px;
+}
+
+li.sns_1 a{}
+li.sns_2 a{background-position: 0 -40px;}
+li.sns_3 a{background-position: 0 -80px;}
+li.sns_4 a{background-position: 0 -120px;}
+
+li.sns_5 a{
+    background-image: url(../img/disability_logo.png) !important;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100px;
+    width: 100px;
+    height: 80px;
+    margin-left: 15px;
+}
 
 
+            /* 스티키배너 */
 
+.top{
+    width: 120px;
+    position: fixed;
+    left: calc(50% + (1168px / 2) + 50px);
+    top: 500px;
+}
 
+.top a{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
 
-
-
-
+.top .pos{
+    position: sticky;
+    /* top: 300px; */
+}
 
 
 
